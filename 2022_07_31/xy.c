@@ -16,19 +16,22 @@ int main()
    system("cls"); //for windows
 //    system("clear"); // for macbook & Linux
 
-   gotoxy(0, 18);
+   gotoxy(1, 5);
    //      x  y
-   printf("gotoxy jumps to cursor position x18 y15.");
-   gotoxy(10, 5);
+   printf("Welcome at Col 1, Line 5.");
+   gotoxy(10, 10);
    printf("Enter your age : ");
-   gotoxy(2, 10);
-   printf("gotoxy jumps to cursor position x2 y10.");
-    int data = 0;
-    gotoxy(26, 5);
-    scanf("%d",&data);
-  gotoxy(19, 19);
+   gotoxy(19, 19);
    printf("End");
+    int data = 0;
+    gotoxy(27, 10);
+    scanf("%d",&data);
+   gotoxy(10, 3);
+   printf("Your age is : %d",data);
 
+
+ gotoxy(20, 20);
+   printf("Dead End");
    return 0;
 }
 
